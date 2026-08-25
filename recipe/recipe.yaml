@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyramids-eo
-  version: "0.3.0"
+  version: "0.4.0"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyramids_eo-${{ version }}.tar.gz
-  sha256: 3ecd7c839400d60a653ff904fed9c393f934f0b89a9c5d4a580b63b4d910fb0d
+  sha256: c0fc2ff631c0fd38267514466327c6b37fcbdadf491e4eb7efc692a3c5d4ff01
 
 build:
   number: 0
@@ -38,6 +38,8 @@ tests:
         - pyramids_eo
         - pyramids_eo.composites
         - pyramids_eo.earthengine
+        - pyramids_eo.enhance
+        - pyramids_eo.resample
         - pyramids_eo.sensors
         - pyramids_eo.sensors.readers
         - pyramids_eo.sensors.registry
