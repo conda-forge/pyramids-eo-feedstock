@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyramids-eo
-  version: "0.8.1"
+  version: "0.9.0"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyramids_eo-${{ version }}.tar.gz
-  sha256: 4842166bbb338d8b1fb85c3cfbf191f3d556d0dc8bdfb82d98119015bf5f5323
+  sha256: d67483f4c176da6fdbaeac83371bbb11aec908aff5169386b28651ee7e00b617
 
 build:
   number: 0
@@ -45,6 +45,7 @@ tests:
         - pyramids_eo.sensors.registry
         - pyramids_eo.sentinel
         - pyramids_eo.sentinel.s2
+        - pyramids_eo.spectral
         - pyramids_eo.stac
       pip_check: true
       python_version:
