@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyramids-eo
-  version: "0.8.0"
+  version: "0.8.1"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyramids_eo-${{ version }}.tar.gz
-  sha256: ac74e710215aba0b65ef3c75700def7313f16d1049719bf51870b853749c4c1e
+  sha256: 4842166bbb338d8b1fb85c3cfbf191f3d556d0dc8bdfb82d98119015bf5f5323
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - pyramids >=0.59.0
+    - pyramids >=0.64.0
     - numpy >=2.0.0
     - pyyaml >=6.0
     - gdal >=3.10.0,<4
