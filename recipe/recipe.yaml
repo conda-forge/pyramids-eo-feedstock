@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyramids-eo
-  version: "0.9.0"
+  version: "0.10.0"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyramids_eo-${{ version }}.tar.gz
-  sha256: d67483f4c176da6fdbaeac83371bbb11aec908aff5169386b28651ee7e00b617
+  sha256: ab11c348bb457f253c6c3c526096d772fc8e1f55f1532232077519aa251bc411
 
 build:
   number: 0
